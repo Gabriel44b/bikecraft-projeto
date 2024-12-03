@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, 
+ul{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.header-bg {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headermenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.headermenu a {
+    color: white;
+    display: inline-block;
+    padding: 16px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 2s;
+}
+
+
+.headermenu a:after{
+
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #FFBF00;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+
+.headermenu a:hover:after{
+
+    width: 100%;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .headermenu {
+        flex-direction: row;
+        gap: 20px; 
+    }
+
+}
+
+.introducao-bg{
+    background-color: black;
+    color: white;
+}
+
+
+.introduce {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+}
+
+
+.introduce p{
+    
+}
