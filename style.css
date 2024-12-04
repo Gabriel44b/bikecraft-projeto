@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    height: 2000px;
 }
 
 h1, 
-ul{
-    margin: 0;
+ul,
+p{
+    margin: 0px;
 }
 
 a{
@@ -23,7 +25,11 @@ ul {
 .header-bg {
     background-color: black;
 }
+img{
+    max-width: 100%;
+    display: block;
 
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -85,6 +91,7 @@ ul {
 .introducao-bg{
     background-color: black;
     color: white;
+    box-shadow: inset 0 -120px rgb(255, 255, 255);
 }
 
 
@@ -93,9 +100,74 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.introduce p 
+.introduce p{
+
+    grid-column: 1;
+}
+
+.introduce img{
+    grid-row: 1/3;
+    grid-column:2 ;
+    border-radius: 10px;
+}
+
+.introduce img{
+    
+    height: 100%;
+    object-fit: cover;
+}
+
+.introducao-img{
+    margin-bottom: -120px;
 }
 
 
+.introduce-content{
+    align-self: end;
+    padding-bottom: 200px;
+    margin-top: 160px;
+}
+
+.introduce h1{
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+}
+
+.introduce span{
+    color: #FBB704;
+}
+
 .introduce p{
-    
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #B2B2B2;
+}
+
+.introduce a{
+
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #FFBB01;
+    border-radius: 7px;
+    color: #332200;
+    box-shadow:  0 1px 2px 0px rgb(0,0,0,0.1);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+}
+
+.bigtext{
+    font-size: 90px;
 }
