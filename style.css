@@ -5,7 +5,7 @@ body {
     height: 2000px;
 }
 
-h1, 
+h1,  
 ul,
 p{
     margin: 0px;
@@ -87,7 +87,6 @@ img{
     }
 
 }
-
 .introducao-bg{
     background-color: black;
     color: white;
@@ -169,5 +168,279 @@ img{
 }
 
 .bigtext{
-    font-size: 90px;
+    font-size: 70px;
+    margin-left: 5%;
+}
+
+.bigtext span{
+    color:#FFBB01;
+}   
+.font-xx1{
+    font-size: 4rem;
+    line-height: 1.125;
+    font-weight: 600;
+    
+}
+
+.mediantext{
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.bicicletas {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin-top: 55px;
+  }
+  
+  .bicicletas ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bicicletas img {
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    width: 400px;
+    height: 497px;
+    object-fit: cover; /* Corta a imagem se necessário */
+    border-radius: 5px; /* (Opcional) Bordas arredondadas */
+  }
+  
+  .mediantext {
+    font-weight: bold; 
+    font-size: 1.9rem;
+    margin-top: 10px; 
+  }
+  
+  .font-2-m {
+    display: block; 
+    margin-top: -30px;
+    font-size: 1.2rem; 
+    
+  }
+  
+  span.font-2-m {
+    color: rgb(105, 105, 105);
+  }
+  
+  h3::before {
+    content: "-"; 
+    color: orange; 
+    background-color: orange;
+    display: inline-block; 
+    width: 11px;
+    height: 10px; 
+    margin-right: 3px; 
+    transition: width 0.3s ease; 
+    vertical-align: middle; 
+  }
+  
+  h3:hover::before {
+    width: 30px; /* Largura ao passar o mouse */
+  }
+
+.tecavancada {
+    background-color:#111111;
+    color: white;
+}
+
+.tecavancada .introducao-bg {
+    background-color:#111111;
+    box-shadow: inset 0 -120px rgb(255, 255, 255);
+    margin-top: 130px;
+    height: 1100px;
+}
+
+.tecavancada .introduce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+.tecavancada .introduce-contenttec {
+    align-self: stretch;
+    padding-bottom: 200px;
+    margin-top: 60px    
+}
+
+.tecavancada .introduce h1 { 
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+}
+
+.tecavancada .introduce h1 span {
+    color: #FBB704;
+}
+
+.tecavancada .introduce p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #B2B2B2;
+}
+
+.tecavancada .introduce a {
+    display: inline-block;
+    text-decoration:underline;
+    padding: 16px 2px;
+    background-color:#111111;
+    border-radius: 7px;
+    color: #FBB704;
+    box-shadow: 0 1px 2px 0px rgb(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.33;
+}
+
+.tecavancada .introduce a:hover{
+    color: #ffffff;
+}
+
+.tecavancada .introduce img {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    border-radius: 10px;
+    height: 100%;
+    height: 1100px;
+    object-fit: cover;
+    margin-top: -90px;
+}
+
+
+
+.bigtext {
+    font-size: 70px;
+    margin-left: 5%;
+}
+
+.bigtext span {
+    color: #FFBB01;
+}
+
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: -330px;
+    margin-left: 40px;
+    
+}
+
+.feature {
+    text-align: left;
+    color: #fff;
+}
+
+.feature img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.feature p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #B2B2B2; 
+}
+
+.bigtext {
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+
+.bigtext span {
+    color: #FFBB01;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    padding: 100px; 
+    margin-top: -100px;
+}
+
+.image-gallery img {
+    width: 60%;
+    height: auto;
+    padding: 30px;
+    background-color: transparent; /
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas menores */
+    }
+}
+
+@media (max-width: 900px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas ainda menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: 2fr; /* 1 coluna em telas pequenas */
+    }
+}
+
+.depoimento {
+    display: flex; 
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaço entre a imagem e o depoimento */
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    gap: 20px; /* Espaçamento entre a imagem e o depoimento */
+}
+
+.depoimento figure {
+    flex: 1; 
+    margin: 0; 
+    height: 100%; 
+}
+
+.depoimento img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+
+}
+
+.depoimento p {
+    flex: 1; /* Ocupa 50% do espaço */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #111111; /* Cor do texto */
+    margin: 0 0 10px; /* Margem inferior para separar do nome */
+}
+
+.depoimento h1 {
+    font-size: 20px; /* Ajusta o tamanho do nome */
+    color: #333333; /* Cor mais escura para contraste */
+    margin: 0; /* Remove margem padrão */
+    text-align: left; /* Alinha o nome à esquerda */
 }
