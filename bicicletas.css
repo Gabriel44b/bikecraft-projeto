@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+}
+
+h1,  
+ul,
+p{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.header-bg {
+    background-color: black;
+}
+img{
+    max-width: 100%;
+    display: block;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headermenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.headermenu a {
+    color: white;
+    display: inline-block;
+    padding: 16px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 2s;
+}
+
+
+.headermenu a:after{
+
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #FFBF00;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+
+.headermenu a:hover:after{
+
+    width: 100%;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .headermenu {
+        flex-direction: row;
+        gap: 20px; 
+    }
+
+}
+
+.fita{
+    width: 100%;
+    height: 230px;
+    background-color: #111111;
+
+}
+
+.fita h1{
+
+    color: #B2B2B2;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 70px 156px;
+}
+
+.fita h2{
+    color: #fff;
+    font-size: 60px;
+    margin-top: -58px;
+    margin-left: 2.6em;
+}
+
+.fita h2 span{
+    color: #FFBF00;
+}
+
+.nimbus{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7,57px);
+
+}
+
+.nimbus img{
+    grid-column: 2/7;
+    grid-row: 2/7;
+    object-fit: cover;
+    border-radius: 5px;
+    width:90%;
+    height: 106%;
+    margin-left: 50px;
+}
+
+.nimbus h4{
+    color: #fff;
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.nimbus h4:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.nimbus h1{
+    grid-column: 7/13;
+    grid-row: 2/3;
+    margin: 20px;
+}
+
+.nimbus p{
+    grid-column: 7/13;
+    grid-row: 3/5;
+    margin: 20px;
+    color: #595959;
+}
+
+
+.nimbus h1 span{
+    color: #FFBF00;
+}
+
+.nimbus li{
+    grid-column: 7/9;
+    display: flex;
+    flex-direction: row;
+    margin: -30px;
+    color: #595959;
+}
+
+#first{
+    margin-top: 220px;
+}
+
+#two{
+    margin-top: 30px;
+}
+
+#three{
+    margin-top: 12px;
+}
+
+#four{
+    margin-top: -2px;
+}
+
+.nimbus li img{
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+}
+
+.nimbus a{
+    grid-column: 10/12;
+    grid-row: 6/8; 
+    margin: 20px;
+    margin-top: 32px;
+}
+
+
+.nimbus a button{
+
+    font-size: 25px;
+    height: 50px;
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #FEBD01, #E79515);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.nebula{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7,57px);
+}
+
+
+
+
+.nebula img{
+    grid-column: 2/7;
+    grid-row: 2/7;
+    object-fit: cover;
+    border-radius: 5px;
+    width:90%;
+    height: 106%;
+    margin-left: 50px;
+}
+
+.nebula h4{
+    color: #fff;
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.nebula h4:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.nebula h1{
+    grid-column: 7/13;
+    grid-row: 2/3;
+    margin: 20px;
+}
+
+.nebula p{
+    grid-column: 7/13;
+    grid-row: 3/5;
+    margin: 20px;
+    color: #595959;
+}
+
+.nebula h1 span{
+    color: #FFBF00;
+}
+
+.nebula li{
+    grid-column: 7/9;
+    display: flex;
+    flex-direction: row;
+    margin: -30px;
+    color: #595959;
+}
+
+#first{
+    margin-top: 220px;
+}
+
+#two{
+    margin-top: 30px;
+}
+
+#three{
+    margin-top: 12px;
+}
+
+#four{
+    margin-top: -2px;
+}
+
+.nebula li img{
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+}
+
+.nebula a{
+    grid-column: 10/12;
+    grid-row: 6/8; 
+    margin: 20px;
+    margin-top: 32px;
+}
+
+.nebula a button{
+    font-size: 25px;
+    height: 50px;
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #FEBD01, #E79515);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.magic{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7,57px);
+    background-color: #000000;
+}
+
+.magicbg{
+    background-color: #fff;
+    width: 350%;
+    height: 400px;
+}
+
+.magic img{
+    grid-column: 2/7;
+    grid-row: 2/7;
+    object-fit: cover;
+    border-radius: 5px;
+    width:90%;
+    height: 106%;
+    margin-left: 50px;
+}
+
+.magic h4{
+    color: #fff;
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.magic h4:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.magic h1{
+    grid-column: 7/13;
+    grid-row: 2/3;
+    margin: 20px;
+    color: #fff;
+}
+
+.magic p{
+    grid-column: 7/13;
+    grid-row: 3/5;
+    margin: 20px;
+    color: #fcf7f7;
+}
+
+.magic h1 span{
+    color: #FFBF00;
+}
+
+.magic li{
+    grid-column: 7/9;
+    display: flex;
+    flex-direction: row;
+    margin: -30px;
+    color: #dadada;
+}
+
+#first{
+    margin-top: 220px;
+}
+
+#two{
+    margin-top: 30px;
+}
+
+#three{
+    margin-top: 12px;
+}
+
+#four{
+    margin-top: -2px;
+}
+
+.magic li img{
+    width: 20px;
+    height: 20px;
+    margin-right:8px;
+}
+
+.magic a{
+    grid-column: 10/12;
+    grid-row: 6/8; 
+    margin: 20px;
+    margin-top: 32px;
+}
+
+.magic a button{
+    font-size: 25px;
+    height: 50px;
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #FEBD01, #E79515);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
